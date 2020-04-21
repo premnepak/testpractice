@@ -1,0 +1,28 @@
+{
+  "chromeWebSecurity": false,
+  "ignoreTestFiles": ["*/**/examples/**/*.js", "*.ignore.js","*.ignore.ts"],
+  "baseUrl": "https://www.tmsandbox.co.nz",
+  "env":{
+   
+    "RETRIES": 2
+  },
+  "blacklistHosts": [
+    "www.google-analytics.com",
+    "analytics.justuno.com/api/analytics/pagestats/",
+    "ekr.zdassets.com/",
+    "www.google-analytics.com/analytics.js",
+    "hello.myfonts.net/",
+    "dc.services.visualstudio.com/v2/track",
+    "myfoodbag.zendesk.com/embeddable/config",
+    "static.zdassets.com/ekr/",
+    "www.facebook.com/tr/",
+    "my.justuno.com/ajax/",
+    "cdn.justuno.com/vck.js"
+  ],
+  "defaultCommandTimeout": 100000,
+  "requestTimeout": 100000,
+  "pageLoadTimeout": 200000,
+  "responseTimeout": 200000,
+  "projectId": "we2r40"
+  
+}

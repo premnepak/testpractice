@@ -1,0 +1,51 @@
+{
+  "name": "myfoodbag.cypress.e2e",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/MyFoodBag/myfoodbag.cypress.e2e.git",
+  "author": "myfoodbag",
+  "license": "MIT",
+  "scripts": {
+    "open": "cypress open",
+    "cypress:run": "cypress run",
+    "compile": "tsc --noEmit",
+    "lint": "eslint cypress/**/*.ts",
+    "lint:fix": "yarn lint --fix"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "devDependencies": {
+    "@cypress/webpack-preprocessor": "^4.1.1",
+    "@types/chai": "^4.2.7",
+    "@types/lodash": "^4.14.149",
+    "@types/mocha": "^5.2.7",
+    "@types/uuid": "^3.4.6",
+    "@typescript-eslint/eslint-plugin": "^2.14.0",
+    "@typescript-eslint/parser": "^2.12.0",
+    "cypress": "4.4.1",
+    "cypress-plugin-retries": "^1.5.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-cypress": "^2.8.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-simple-import-sort": "^5.0.2",
+    "husky": "^3.1.0",
+    "lint-staged": "8.2.1",
+    "lodash": "^4.17.15",
+    "prettier": "^1.19.1",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.8.3",
+    "uuid": "7.0.3",
+    "webpack": "^4.41.5"
+  }
+}

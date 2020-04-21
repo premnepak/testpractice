@@ -1,0 +1,12 @@
+{
+  "editor.rulers": [
+    80,
+    120
+  ],
+  "editor.formatOnSave": false,
+  "eslint.enable": true,
+
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
+}
